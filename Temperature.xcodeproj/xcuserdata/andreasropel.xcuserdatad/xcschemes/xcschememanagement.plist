@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Glance - TempWatchApp.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>TempWatchApp.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>Temperature.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -18,6 +28,11 @@
 			<true/>
 		</dict>
 		<key>130A475B1AEE579E00420A23</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>13A9AD8C1B66731A0043D91C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
