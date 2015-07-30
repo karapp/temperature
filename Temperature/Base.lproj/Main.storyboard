@@ -33,7 +33,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Aktuell utomhustemperatur" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0l-Jf-849">
-                                <rect key="frame" x="190" y="96" width="220" height="21"/>
+                                <rect key="frame" x="20" y="96" width="220" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -45,23 +45,25 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Aktuell inomhustemperatur" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Sj-mV-ZKz">
-                                <rect key="frame" x="197" y="209" width="207" height="21"/>
+                                <rect key="frame" x="373" y="96" width="207" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="--°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFe-Y3-Qh0">
-                                <rect key="frame" x="174" y="247" width="252" height="82"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="194" id="XiH-e7-f16"/>
-                                    <constraint firstAttribute="height" constant="82" id="qgW-qe-tiS"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Nuvarande nederbörd" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CWl-Ln-ltR">
+                                <rect key="frame" x="20" y="262" width="207" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="--°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFe-Y3-Qh0">
+                                <rect key="frame" x="373" y="135" width="207" height="82"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="60"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="--°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMu-uC-qlx">
-                                <rect key="frame" x="174" y="125" width="252" height="82"/>
+                                <rect key="frame" x="20" y="125" width="220" height="82"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="82" id="fFc-Iz-wx3"/>
                                     <constraint firstAttribute="width" constant="194" id="rcY-TW-by3"/>
@@ -70,8 +72,8 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="--°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kce-56-j8N">
-                                <rect key="frame" x="174" y="383" width="252" height="82"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="-- " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kce-56-j8N">
+                                <rect key="frame" x="20" y="302" width="220" height="82"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="82" id="5Gt-qY-zoG"/>
                                     <constraint firstAttribute="width" constant="194" id="F0Z-Xn-bCv"/>
@@ -85,15 +87,15 @@
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="whm-PY-VAy" secondAttribute="centerX" id="5Fi-c1-Hah"/>
-                            <constraint firstItem="xFe-Y3-Qh0" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="CEs-U9-I06"/>
                             <constraint firstAttribute="centerX" secondItem="LbN-OC-I5B" secondAttribute="centerX" id="Inm-Bb-O1t"/>
-                            <constraint firstItem="V0l-Jf-849" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Prl-hC-EK4"/>
+                            <constraint firstItem="CWl-Ln-ltR" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="JE4-n5-lzU"/>
                             <constraint firstItem="cMu-uC-qlx" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="QiD-bc-QCr"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="whm-PY-VAy" secondAttribute="bottom" constant="48" id="Qts-3H-Pui"/>
-                            <constraint firstItem="1Sj-mV-ZKz" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="VKq-76-KHT"/>
+                            <constraint firstItem="1Sj-mV-ZKz" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="aEC-ZA-wf6"/>
                             <constraint firstItem="SfO-w2-agn" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="fRF-kf-FJi"/>
                             <constraint firstItem="whm-PY-VAy" firstAttribute="top" secondItem="LbN-OC-I5B" secondAttribute="bottom" constant="8" id="hFF-qc-798"/>
                             <constraint firstItem="SfO-w2-agn" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="34" id="owv-YJ-Jci"/>
+                            <constraint firstItem="V0l-Jf-849" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="rqx-dc-xJ1"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="D88-PH-BQZ" appends="YES" id="N29-PT-N2d"/>
@@ -108,69 +110,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="up" id="D88-PH-BQZ">
-                    <connections>
-                        <segue destination="0XO-Sd-WDx" kind="presentation" id="RjB-IF-PLp"/>
-                    </connections>
-                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="D88-PH-BQZ"/>
             </objects>
             <point key="canvasLocation" x="289" y="368"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="lwz-Zo-mvm">
-            <objects>
-                <viewController id="0XO-Sd-WDx" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="0BD-Ug-Te2"/>
-                        <viewControllerLayoutGuide type="bottom" id="Vrc-wO-h7s"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="jSQ-EH-P6y">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Solbadsvägen 79" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ca8-Yh-aoH">
-                                <rect key="frame" x="197" y="60" width="207" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="m/s" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6wP-xF-Hkb">
-                                <rect key="frame" x="356" y="164" width="29" height="21"/>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hen-hV-e7U">
-                                <rect key="frame" x="174" y="134" width="252" height="82"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="194" id="ZKY-Av-9gq"/>
-                                    <constraint firstAttribute="height" constant="82" id="dHY-WH-0n4"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="60"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <gestureRecognizers/>
-                        <constraints>
-                            <constraint firstItem="hen-hV-e7U" firstAttribute="centerX" secondItem="jSQ-EH-P6y" secondAttribute="centerX" id="47C-mf-zjP"/>
-                            <constraint firstItem="ca8-Yh-aoH" firstAttribute="centerX" secondItem="jSQ-EH-P6y" secondAttribute="centerX" id="Ecv-gQ-pgX"/>
-                        </constraints>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="D88-PH-BQZ" appends="YES" id="If3-Qg-1lL"/>
-                            <outletCollection property="gestureRecognizers" destination="cfT-wE-vBa" appends="YES" id="hvl-Kv-sZ0"/>
-                        </connections>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1dj-dB-2eA" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="up" id="cfT-wE-vBa">
-                    <connections>
-                        <segue destination="vXZ-lx-hvc" kind="presentation" id="X2x-48-IAt"/>
-                    </connections>
-                </swipeGestureRecognizer>
-            </objects>
-            <point key="canvasLocation" x="1335" y="352"/>
         </scene>
     </scenes>
 </document>
