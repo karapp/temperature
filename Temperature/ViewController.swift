@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     var temperature2:Float!
     @IBOutlet var updateBtn: UIButton!
     @IBOutlet weak var temperature2Label: UILabel!
-    @IBOutlet weak var windSpeedLabel: UILabel!
+
     
     var container: UIView = UIView()
     var loadingView: UIView = UIView()

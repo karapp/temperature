@@ -62,22 +62,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="--°" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMu-uC-qlx">
-                                <rect key="frame" x="382" y="262" width="91" height="72"/>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="-- " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kce-56-j8N">
-                                <rect key="frame" x="382" y="391" width="78" height="67"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="82" id="5Gt-qY-zoG"/>
-                                    <constraint firstAttribute="width" constant="194" id="F0Z-Xn-bCv"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="vert_line.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="nUE-pd-Rar">
                                 <rect key="frame" x="0.0" y="262" width="600" height="12"/>
                             </imageView>
@@ -87,6 +71,12 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="vert_line.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="bsK-D8-8kC">
                                 <rect key="frame" x="0.0" y="160" width="600" height="12"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="--°" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="20j-Hl-5O3">
+                                <rect key="frame" x="382" y="262" width="91" height="54"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -95,10 +85,11 @@
                             <constraint firstItem="xFe-Y3-Qh0" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="EcO-qe-knZ"/>
                             <constraint firstAttribute="centerX" secondItem="LbN-OC-I5B" secondAttribute="centerX" id="Inm-Bb-O1t"/>
                             <constraint firstItem="CWl-Ln-ltR" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="JE4-n5-lzU"/>
+                            <constraint firstItem="V0l-Jf-849" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="Ky3-EI-I9J"/>
+                            <constraint firstItem="20j-Hl-5O3" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="LQG-ob-j3a"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="whm-PY-VAy" secondAttribute="bottom" constant="48" id="Qts-3H-Pui"/>
                             <constraint firstItem="1Sj-mV-ZKz" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Z95-kF-HPa"/>
                             <constraint firstItem="SfO-w2-agn" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="fRF-kf-FJi"/>
-                            <constraint firstItem="cMu-uC-qlx" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="fno-l0-yVh"/>
                             <constraint firstItem="whm-PY-VAy" firstAttribute="top" secondItem="LbN-OC-I5B" secondAttribute="bottom" constant="8" id="hFF-qc-798"/>
                             <constraint firstItem="SfO-w2-agn" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="34" id="owv-YJ-Jci"/>
                             <constraint firstItem="V0l-Jf-849" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="xu4-mM-ME3"/>
@@ -109,10 +100,9 @@
                     </view>
                     <connections>
                         <outlet property="temperature2Label" destination="xFe-Y3-Qh0" id="Xkv-3a-Ecq"/>
-                        <outlet property="temperatureLabel" destination="cMu-uC-qlx" id="zCc-DX-pYu"/>
+                        <outlet property="temperatureLabel" destination="20j-Hl-5O3" id="KdE-6S-9rH"/>
                         <outlet property="updateBtn" destination="whm-PY-VAy" id="Moc-bl-uxH"/>
                         <outlet property="updatedLabel" destination="LbN-OC-I5B" id="EFr-K7-KY5"/>
-                        <outlet property="windSpeedLabel" destination="kce-56-j8N" id="blR-RS-GGO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
