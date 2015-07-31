@@ -13,10 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var updatedLabel: UILabel!
     @IBOutlet weak var temperatureLabel: UILabel!
     var temperature:Float!
-    var temperature2:Float!
     @IBOutlet var updateBtn: UIButton!
-    @IBOutlet weak var temperature2Label: UILabel!
-
     
     var container: UIView = UIView()
     var loadingView: UIView = UIView()
@@ -31,7 +28,7 @@ class ViewController: UIViewController {
         updateTemperatureData()
         
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -60,24 +57,7 @@ class ViewController: UIViewController {
                 if let tempdata = tempdata {
                     self.temperature = tempdata["temperature"] as! Float
                     self.temperatureLabel.text = String(format: "%.01f", self.temperature) + "°"
-
-
-                }
-            } else {
-                print(error)
-            }
-        }
-        
-        let query2 = PFQuery(className:"temps")
-        query2.orderByDescending("createdAt")
-        query2.whereKey("sensor", equalTo:"Solbad Innetemp")
-        query2.getFirstObjectInBackgroundWithBlock {
-            (tempdata2: PFObject?, error: NSError?) -> Void in
-            if error == nil {
-                if let tempdata2 = tempdata2 {
-                    self.temperature2 = tempdata2["temperature"] as! Float
-                    self.temperature2Label.text = String(format: "%.01f", self.temperature2) + "°"
-
+                    
                     
                     let formatter: NSDateFormatter = NSDateFormatter()
                     formatter.dateFormat = "HH:mm"
@@ -89,7 +69,7 @@ class ViewController: UIViewController {
                     // Disable button for x secs
                     self.updateBtn.enabled = false
                     NSTimer.scheduledTimerWithTimeInterval(60, target: self, selector: "enableButton", userInfo: nil, repeats: false)
-
+                    
                     
                 }
             } else {
@@ -98,4 +78,7 @@ class ViewController: UIViewController {
         }
     }
 }
+
+
+
 

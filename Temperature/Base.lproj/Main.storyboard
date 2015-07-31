@@ -56,12 +56,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="--°" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFe-Y3-Qh0">
-                                <rect key="frame" x="382" y="171" width="91" height="54"/>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="40"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="vert_line.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="nUE-pd-Rar">
                                 <rect key="frame" x="0.0" y="262" width="600" height="12"/>
                             </imageView>
@@ -82,7 +76,6 @@
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="whm-PY-VAy" secondAttribute="centerX" id="5Fi-c1-Hah"/>
-                            <constraint firstItem="xFe-Y3-Qh0" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="EcO-qe-knZ"/>
                             <constraint firstAttribute="centerX" secondItem="LbN-OC-I5B" secondAttribute="centerX" id="Inm-Bb-O1t"/>
                             <constraint firstItem="CWl-Ln-ltR" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="JE4-n5-lzU"/>
                             <constraint firstItem="V0l-Jf-849" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="Ky3-EI-I9J"/>
@@ -99,7 +92,6 @@
                         </connections>
                     </view>
                     <connections>
-                        <outlet property="temperature2Label" destination="xFe-Y3-Qh0" id="Xkv-3a-Ecq"/>
                         <outlet property="temperatureLabel" destination="20j-Hl-5O3" id="KdE-6S-9rH"/>
                         <outlet property="updateBtn" destination="whm-PY-VAy" id="Moc-bl-uxH"/>
                         <outlet property="updatedLabel" destination="LbN-OC-I5B" id="EFr-K7-KY5"/>
