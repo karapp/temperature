@@ -14,7 +14,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var temperatureLabel: UILabel!
     var temperature:Float!
     var temperature2:Float!
-    var temperature3:Float!
     @IBOutlet var updateBtn: UIButton!
     @IBOutlet weak var temperature2Label: UILabel!
     @IBOutlet weak var windSpeedLabel: UILabel!
@@ -61,19 +60,8 @@ class ViewController: UIViewController {
                 if let tempdata = tempdata {
                     self.temperature = tempdata["temperature"] as! Float
                     self.temperatureLabel.text = String(format: "%.01f", self.temperature) + "°"
-                  
-                    let formatter: NSDateFormatter = NSDateFormatter()
-                    formatter.dateFormat = "HH:mm"
-                    let dateTimePrefix: String = formatter.stringFromDate(NSDate())
-                    self.updatedLabel.text = "Uppd. senast kl. " + dateTimePrefix
-                    
-//                    MBProgressHUD.hideAllHUDsForView(self.view, animated: true)
-                    
-                    // Disable button for x secs
-                  /*  self.updateBtn.enabled = false
-                    NSTimer.scheduledTimerWithTimeInterval(60, target: self, selector: "enableButton", userInfo: nil, repeats: false)
 
-                    */
+
                 }
             } else {
                 print(error)
@@ -91,33 +79,22 @@ class ViewController: UIViewController {
                     self.temperature2Label.text = String(format: "%.01f", self.temperature2) + "°"
 
                     
+                    let formatter: NSDateFormatter = NSDateFormatter()
+                    formatter.dateFormat = "HH:mm"
+                    let dateTimePrefix: String = formatter.stringFromDate(NSDate())
+                    self.updatedLabel.text = "Uppd. senast kl. " + dateTimePrefix
+                    
+                    MBProgressHUD.hideAllHUDsForView(self.view, animated: true)
+                    
+                    // Disable button for x secs
+                    self.updateBtn.enabled = false
+                    NSTimer.scheduledTimerWithTimeInterval(60, target: self, selector: "enableButton", userInfo: nil, repeats: false)
+
+                    
                 }
             } else {
                 print(error)
             }
-            
-            let query3 = PFQuery(className:"wind")
-            query3.orderByDescending("createdAt")
-            query3.whereKey("sensor", equalTo:"Solbad Vind")
-            query3.getFirstObjectInBackgroundWithBlock {
-                (tempdata2: PFObject?, error: NSError?) -> Void in
-                if error == nil {
-                    if let tempdata3 = tempdata3 {
-                        self.temperature3 = tempdata3["wind"] as! Float
-                        self.temperature3Label.text = String(format: "%.01f", self.temperature3) + "°"
-                        
-                        
-                        MBProgressHUD.hideAllHUDsForView(self.view, animated: true)
-                        
-                        // Disable button for x secs
-                        self.updateBtn.enabled = false
-                        NSTimer.scheduledTimerWithTimeInterval(60, target: self, selector: "enableButton", userInfo: nil, repeats: false)
-                        
-                        
-                    }
-                } else {
-                    print(error)
-                }
         }
     }
 }
