@@ -13,6 +13,25 @@
 		130A47541AEE579E00420A23 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 130A47531AEE579E00420A23 /* Images.xcassets */; };
 		130A47571AEE579E00420A23 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 130A47551AEE579E00420A23 /* LaunchScreen.xib */; };
 		130A47631AEE579E00420A23 /* TemperatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130A47621AEE579E00420A23 /* TemperatureTests.swift */; };
+		130A47791AEE581C00420A23 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 130A47781AEE581C00420A23 /* AudioToolbox.framework */; };
+		130A477B1AEE582200420A23 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 130A477A1AEE582200420A23 /* CFNetwork.framework */; };
+		130A477D1AEE582800420A23 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 130A477C1AEE582800420A23 /* CoreGraphics.framework */; };
+		130A477F1AEE582E00420A23 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 130A477E1AEE582E00420A23 /* CoreLocation.framework */; };
+		130A47811AEE583300420A23 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 130A47801AEE583300420A23 /* MobileCoreServices.framework */; };
+		130A47831AEE583900420A23 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 130A47821AEE583900420A23 /* QuartzCore.framework */; };
+		130A47851AEE583E00420A23 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 130A47841AEE583E00420A23 /* Security.framework */; };
+		130A47871AEE584300420A23 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 130A47861AEE584300420A23 /* StoreKit.framework */; };
+		130A47891AEE584800420A23 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 130A47881AEE584800420A23 /* SystemConfiguration.framework */; };
+		13A9AD881B666CBF0043D91C /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 13A9AD871B666CBF0043D91C /* libz.tbd */; };
+		13A9AD8A1B666CCA0043D91C /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 13A9AD891B666CCA0043D91C /* libsqlite3.tbd */; };
+		13A9AD9A1B66731A0043D91C /* TempWatchApp Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 13A9AD991B66731A0043D91C /* TempWatchApp Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		13EE28641B31F7BA0011EF03 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 13EE28631B31F7BA0011EF03 /* MBProgressHUD.m */; };
+		A04E28631B76B382002E5C30 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04E28561B76B22B002E5C30 /* Bolts.framework */; };
+		A04E28641B76B382002E5C30 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04E28571B76B22B002E5C30 /* Parse.framework */; };
+		A04E28651B76B382002E5C30 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04E28581B76B22B002E5C30 /* ParseCrashReporting.framework */; };
+		A04E28661B76B382002E5C30 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04E28591B76B22B002E5C30 /* ParseFacebookUtils.framework */; };
+		A04E28671B76B382002E5C30 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04E285A1B76B22B002E5C30 /* ParseFacebookUtilsV4.framework */; };
+		A04E28681B76B382002E5C30 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04E285B1B76B22B002E5C30 /* ParseUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +42,38 @@
 			remoteGlobalIDString = 130A47461AEE579E00420A23;
 			remoteInfo = Temperature;
 		};
+		13A9AD9B1B66731A0043D91C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 130A473F1AEE579E00420A23 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13A9AD981B66731A0043D91C;
+			remoteInfo = "TempWatchApp Extension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		13A9ADAF1B66731A0043D91C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				13A9AD9A1B66731A0043D91C /* TempWatchApp Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13A9ADB11B66731A0043D91C /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		130A47471AEE579E00420A23 /* Temperature.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Temperature.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +86,29 @@
 		130A475C1AEE579E00420A23 /* TemperatureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TemperatureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		130A47611AEE579E00420A23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		130A47621AEE579E00420A23 /* TemperatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureTests.swift; sourceTree = "<group>"; };
+		130A47781AEE581C00420A23 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		130A477A1AEE582200420A23 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		130A477C1AEE582800420A23 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		130A477E1AEE582E00420A23 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		130A47801AEE583300420A23 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		130A47821AEE583900420A23 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		130A47841AEE583E00420A23 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		130A47861AEE584300420A23 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		130A47881AEE584800420A23 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		136430971B2EF16300549A49 /* Temperature.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Temperature.entitlements; sourceTree = "<group>"; };
+		13A9AD871B666CBF0043D91C /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		13A9AD891B666CCA0043D91C /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		13A9AD8D1B66731A0043D91C /* TempWatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TempWatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13A9AD991B66731A0043D91C /* TempWatchApp Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TempWatchApp Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13EE28611B31F7BA0011EF03 /* Temperature-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Temperature-Bridging-Header.h"; sourceTree = "<group>"; };
+		13EE28621B31F7BA0011EF03 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		13EE28631B31F7BA0011EF03 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		A04E28561B76B22B002E5C30 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		A04E28571B76B22B002E5C30 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		A04E28581B76B22B002E5C30 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
+		A04E28591B76B22B002E5C30 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		A04E285A1B76B22B002E5C30 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
+		A04E285B1B76B22B002E5C30 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,10 +116,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A04E28631B76B382002E5C30 /* Bolts.framework in Frameworks */,
+				A04E28641B76B382002E5C30 /* Parse.framework in Frameworks */,
+				A04E28651B76B382002E5C30 /* ParseCrashReporting.framework in Frameworks */,
+				A04E28661B76B382002E5C30 /* ParseFacebookUtils.framework in Frameworks */,
+				A04E28671B76B382002E5C30 /* ParseFacebookUtilsV4.framework in Frameworks */,
+				A04E28681B76B382002E5C30 /* ParseUI.framework in Frameworks */,
+				13A9AD8A1B666CCA0043D91C /* libsqlite3.tbd in Frameworks */,
+				13A9AD881B666CBF0043D91C /* libz.tbd in Frameworks */,
+				130A47891AEE584800420A23 /* SystemConfiguration.framework in Frameworks */,
+				130A47871AEE584300420A23 /* StoreKit.framework in Frameworks */,
+				130A47851AEE583E00420A23 /* Security.framework in Frameworks */,
+				130A47831AEE583900420A23 /* QuartzCore.framework in Frameworks */,
+				130A47811AEE583300420A23 /* MobileCoreServices.framework in Frameworks */,
+				130A477F1AEE582E00420A23 /* CoreLocation.framework in Frameworks */,
+				130A477D1AEE582800420A23 /* CoreGraphics.framework in Frameworks */,
+				130A477B1AEE582200420A23 /* CFNetwork.framework in Frameworks */,
+				130A47791AEE581C00420A23 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		130A47591AEE579E00420A23 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13A9AD961B66731A0043D91C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -59,6 +156,7 @@
 		130A473E1AEE579E00420A23 = {
 			isa = PBXGroup;
 			children = (
+				130A478E1AEE585C00420A23 /* Frameworks */,
 				130A47491AEE579E00420A23 /* Temperature */,
 				130A475F1AEE579E00420A23 /* TemperatureTests */,
 				130A47481AEE579E00420A23 /* Products */,
@@ -70,6 +168,8 @@
 			children = (
 				130A47471AEE579E00420A23 /* Temperature.app */,
 				130A475C1AEE579E00420A23 /* TemperatureTests.xctest */,
+				13A9AD8D1B66731A0043D91C /* TempWatchApp.app */,
+				13A9AD991B66731A0043D91C /* TempWatchApp Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,12 +177,16 @@
 		130A47491AEE579E00420A23 /* Temperature */ = {
 			isa = PBXGroup;
 			children = (
+				136430971B2EF16300549A49 /* Temperature.entitlements */,
+				13EE28621B31F7BA0011EF03 /* MBProgressHUD.h */,
+				13EE28631B31F7BA0011EF03 /* MBProgressHUD.m */,
 				130A474C1AEE579E00420A23 /* AppDelegate.swift */,
 				130A474E1AEE579E00420A23 /* ViewController.swift */,
 				130A47501AEE579E00420A23 /* Main.storyboard */,
 				130A47531AEE579E00420A23 /* Images.xcassets */,
 				130A47551AEE579E00420A23 /* LaunchScreen.xib */,
 				130A474A1AEE579E00420A23 /* Supporting Files */,
+				13EE28611B31F7BA0011EF03 /* Temperature-Bridging-Header.h */,
 			);
 			path = Temperature;
 			sourceTree = "<group>";
@@ -112,6 +216,30 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		130A478E1AEE585C00420A23 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13A9AD891B666CCA0043D91C /* libsqlite3.tbd */,
+				13A9AD871B666CBF0043D91C /* libz.tbd */,
+				A04E28561B76B22B002E5C30 /* Bolts.framework */,
+				A04E28571B76B22B002E5C30 /* Parse.framework */,
+				A04E28581B76B22B002E5C30 /* ParseCrashReporting.framework */,
+				A04E28591B76B22B002E5C30 /* ParseFacebookUtils.framework */,
+				A04E285A1B76B22B002E5C30 /* ParseFacebookUtilsV4.framework */,
+				A04E285B1B76B22B002E5C30 /* ParseUI.framework */,
+				130A47881AEE584800420A23 /* SystemConfiguration.framework */,
+				130A47861AEE584300420A23 /* StoreKit.framework */,
+				130A47841AEE583E00420A23 /* Security.framework */,
+				130A47821AEE583900420A23 /* QuartzCore.framework */,
+				130A47801AEE583300420A23 /* MobileCoreServices.framework */,
+				130A477E1AEE582E00420A23 /* CoreLocation.framework */,
+				130A477C1AEE582800420A23 /* CoreGraphics.framework */,
+				130A477A1AEE582200420A23 /* CFNetwork.framework */,
+				130A47781AEE581C00420A23 /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,6 +250,7 @@
 				130A47431AEE579E00420A23 /* Sources */,
 				130A47441AEE579E00420A23 /* Frameworks */,
 				130A47451AEE579E00420A23 /* Resources */,
+				13A9ADB11B66731A0043D91C /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
@@ -150,21 +279,82 @@
 			productReference = 130A475C1AEE579E00420A23 /* TemperatureTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		13A9AD8C1B66731A0043D91C /* TempWatchApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13A9ADB01B66731A0043D91C /* Build configuration list for PBXNativeTarget "TempWatchApp" */;
+			buildPhases = (
+				13A9AD8B1B66731A0043D91C /* Resources */,
+				13A9ADAF1B66731A0043D91C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13A9AD9C1B66731A0043D91C /* PBXTargetDependency */,
+			);
+			name = TempWatchApp;
+			productName = TempWatchApp;
+			productReference = 13A9AD8D1B66731A0043D91C /* TempWatchApp.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		13A9AD981B66731A0043D91C /* TempWatchApp Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13A9ADAE1B66731A0043D91C /* Build configuration list for PBXNativeTarget "TempWatchApp Extension" */;
+			buildPhases = (
+				13A9AD951B66731A0043D91C /* Sources */,
+				13A9AD961B66731A0043D91C /* Frameworks */,
+				13A9AD971B66731A0043D91C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TempWatchApp Extension";
+			productName = "TempWatchApp Extension";
+			productReference = 13A9AD991B66731A0043D91C /* TempWatchApp Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		130A473F1AEE579E00420A23 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = RopelOfSweden;
 				TargetAttributes = {
 					130A47461AEE579E00420A23 = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = CK433B22M2;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.DataProtection = {
+								enabled = 0;
+							};
+							com.apple.HomeKit = {
+								enabled = 0;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					130A475B1AEE579E00420A23 = {
 						CreatedOnToolsVersion = 6.3;
 						TestTargetID = 130A47461AEE579E00420A23;
+					};
+					13A9AD8C1B66731A0043D91C = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = CK433B22M2;
+					};
+					13A9AD981B66731A0043D91C = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = CK433B22M2;
 					};
 				};
 			};
@@ -183,6 +373,8 @@
 			targets = (
 				130A47461AEE579E00420A23 /* Temperature */,
 				130A475B1AEE579E00420A23 /* TemperatureTests */,
+				13A9AD8C1B66731A0043D91C /* TempWatchApp */,
+				13A9AD981B66731A0043D91C /* TempWatchApp Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -205,6 +397,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		13A9AD8B1B66731A0043D91C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13A9AD971B66731A0043D91C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -213,6 +419,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				130A474F1AEE579E00420A23 /* ViewController.swift in Sources */,
+				13EE28641B31F7BA0011EF03 /* MBProgressHUD.m in Sources */,
 				130A474D1AEE579E00420A23 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,6 +432,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		13A9AD951B66731A0043D91C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -232,6 +446,11 @@
 			isa = PBXTargetDependency;
 			target = 130A47461AEE579E00420A23 /* Temperature */;
 			targetProxy = 130A475D1AEE579E00420A23 /* PBXContainerItemProxy */;
+		};
+		13A9AD9C1B66731A0043D91C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13A9AD981B66731A0043D91C /* TempWatchApp Extension */;
+			targetProxy = 13A9AD9B1B66731A0043D91C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -275,7 +494,9 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -319,6 +540,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -340,9 +562,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/ropel/Downloads/Parse,
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Temperature/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = se.kalleappelgren.Temperature;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Temperature/Temperature-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -350,9 +585,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/ropel/Downloads/Parse,
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Temperature/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = se.kalleappelgren.Temperature;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Temperature/Temperature-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -370,6 +617,7 @@
 				);
 				INFOPLIST_FILE = TemperatureTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "se.ropelofsweden.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Temperature.app/Temperature";
 			};
@@ -385,8 +633,85 @@
 				);
 				INFOPLIST_FILE = TemperatureTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "se.ropelofsweden.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Temperature.app/Temperature";
+			};
+			name = Release;
+		};
+		13A9ADAA1B66731A0043D91C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				IBSC_MODULE = TempWatchApp_Extension;
+				INFOPLIST_FILE = TempWatchApp/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = se.kalleappelgren.Temperature.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		13A9ADAB1B66731A0043D91C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				IBSC_MODULE = TempWatchApp_Extension;
+				INFOPLIST_FILE = TempWatchApp/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = se.kalleappelgren.Temperature.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		13A9ADAC1B66731A0043D91C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = "TempWatchApp Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = se.kalleappelgren.Temperature.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		13A9ADAD1B66731A0043D91C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "TempWatchApp Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = se.kalleappelgren.Temperature.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
@@ -409,6 +734,7 @@
 				130A47681AEE579E00420A23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		130A47691AEE579E00420A23 /* Build configuration list for PBXNativeTarget "TemperatureTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +743,25 @@
 				130A476B1AEE579E00420A23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13A9ADAE1B66731A0043D91C /* Build configuration list for PBXNativeTarget "TempWatchApp Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13A9ADAC1B66731A0043D91C /* Debug */,
+				13A9ADAD1B66731A0043D91C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13A9ADB01B66731A0043D91C /* Build configuration list for PBXNativeTarget "TempWatchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13A9ADAA1B66731A0043D91C /* Debug */,
+				13A9ADAB1B66731A0043D91C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
