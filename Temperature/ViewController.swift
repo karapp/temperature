@@ -14,6 +14,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var temperatureLabel: UILabel!
     var temperature:Float!
     @IBOutlet var updateBtn: UIButton!
+    @IBOutlet weak var temperature1: UILabel!
+    @IBOutlet weak var temperature2: UILabel!
+    
+    var tempSolbInne:Float!
+    var tempSolrUte:Float!
     
     var container: UIView = UIView()
     var loadingView: UIView = UIView()
@@ -78,6 +83,53 @@ class ViewController: UIViewController {
                     self.updateBtn.enabled = false
                     NSTimer.scheduledTimerWithTimeInterval(60, target: self, selector: "enableButton", userInfo: nil, repeats: false)
 
+                    
+                }
+            } else {
+                print(error)
+            }
+        }
+        
+        let query1 = PFQuery(className:"temps")
+        query1.orderByDescending("createdAt")
+        query1.whereKey("sensor", equalTo:"Solbad Innetemp")
+        query1.getFirstObjectInBackgroundWithBlock {
+            (tempdata1: PFObject?, error: NSError?) -> Void in
+            if error == nil {
+                if let tempdata1 = tempdata1 {
+                    self.tempSolbInne = tempdata1["temperature"] as! Float
+                    self.temperature1.text = String(format: "%.01f", self.tempSolbInne) + "°"
+                    
+                    let userDefaults = NSUserDefaults.standardUserDefaults()
+                    userDefaults.setObject("test", forKey: "currentTemp")
+                    
+                    if let currentTemp = userDefaults.stringForKey("currentTemp")
+                    {
+                        print(currentTemp)
+                    }
+                    
+                }
+            } else {
+                print(error)
+            }
+        }
+        let query2 = PFQuery(className:"temps")
+        query2.orderByDescending("createdAt")
+        query2.whereKey("sensor", equalTo:"Solrosgatan Utetemp")
+        query2.getFirstObjectInBackgroundWithBlock {
+            (tempdata2: PFObject?, error: NSError?) -> Void in
+            if error == nil {
+                if let tempdata2 = tempdata2 {
+                    self.tempSolrUte = tempdata2["temperature"] as! Float
+                    self.temperature2.text = String(format: "%.01f", self.tempSolrUte) + "°"
+                    
+                    let userDefaults = NSUserDefaults.standardUserDefaults()
+                    userDefaults.setObject("test", forKey: "currentTemp")
+                    
+                    if let currentTemp = userDefaults.stringForKey("currentTemp")
+                    {
+                        print(currentTemp)
+                    }
                     
                 }
             } else {

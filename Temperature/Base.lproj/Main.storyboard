@@ -29,6 +29,18 @@
                                 <color key="textColor" red="0.37531190662662334" green="0.61845981281940487" blue="0.97960069444444442" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" red="0.07473999579471291" green="0.51563923443522275" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="--°" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y1n-qx-s3D">
+                                <rect key="frame" x="211" y="114" width="49" height="73"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
+                                <color key="textColor" red="0.37531190660000002" green="0.61845981279999995" blue="0.97960069439999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.074739995789999999" green="0.51563923440000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="--°" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kIa-M3-mh7">
+                                <rect key="frame" x="354" y="202" width="49" height="73"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
+                                <color key="textColor" red="0.37531190660000002" green="0.61845981279999995" blue="0.97960069439999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.074739995789999999" green="0.51563923440000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="whm-PY-VAy">
                                 <rect key="frame" x="231" y="522" width="138" height="30"/>
                                 <state key="normal" title="Uppdatera nu">
@@ -44,25 +56,57 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Solbad Innetemp" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqf-Z6-nps">
+                                <rect key="frame" x="343" y="254" width="115" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="10"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="temp.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="AD3-xC-SiZ">
                                 <rect key="frame" x="305" y="137" width="30" height="48"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="temp.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Kxx-J0-5W2">
+                                <rect key="frame" x="305" y="228" width="30" height="48"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="temp.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="YNI-sn-hW1">
+                                <rect key="frame" x="167" y="137" width="30" height="48"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Solros Utetemp" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x3T-wh-kLe">
+                                <rect key="frame" x="195" y="161" width="79" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="10"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="x3T-wh-kLe" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="-128.5" id="2Ib-nZ-u5c"/>
+                            <constraint firstItem="x3T-wh-kLe" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="-65.5" id="2iN-Ni-opP"/>
+                            <constraint firstItem="YNI-sn-hW1" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="-139" id="3BN-xr-jaD"/>
                             <constraint firstItem="cMu-uC-qlx" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="78" id="5Jz-BO-HRu"/>
+                            <constraint firstItem="Y1n-qx-s3D" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="-149.5" id="5a2-KW-PEB"/>
                             <constraint firstItem="AD3-xC-SiZ" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="20" id="670-7H-Daf"/>
                             <constraint firstItem="LbN-OC-I5B" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="6O2-ZS-yxC"/>
                             <constraint firstItem="whm-PY-VAy" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Jsg-cx-UnC"/>
+                            <constraint firstItem="YNI-sn-hW1" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="-118" id="LdK-ST-73g"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="whm-PY-VAy" secondAttribute="bottom" constant="48" id="Qts-3H-Pui"/>
+                            <constraint firstItem="Kxx-J0-5W2" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="20" id="UNE-bO-mbI"/>
+                            <constraint firstItem="kIa-M3-mh7" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="78.5" id="Xwj-F8-gpF"/>
                             <constraint firstItem="V0l-Jf-849" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="78" id="Z1p-cI-TB2"/>
+                            <constraint firstItem="kIa-M3-mh7" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="-61.5" id="ZJx-rn-eQL"/>
+                            <constraint firstItem="Y1n-qx-s3D" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="-64.5" id="cdW-JB-0pi"/>
                             <constraint firstItem="V0l-Jf-849" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="-128.5" id="ddU-pF-nwp"/>
                             <constraint firstItem="cMu-uC-qlx" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="-149.5" id="eKS-ay-FQR"/>
                             <constraint firstItem="AD3-xC-SiZ" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="-139" id="fPn-fb-xIg"/>
                             <constraint firstItem="whm-PY-VAy" firstAttribute="top" secondItem="LbN-OC-I5B" secondAttribute="bottom" constant="8" id="hFF-qc-798"/>
+                            <constraint firstItem="lqf-Z6-nps" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="78" id="j67-Rw-cFr"/>
+                            <constraint firstItem="lqf-Z6-nps" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="-35.5" id="nDl-kA-Tdb"/>
+                            <constraint firstItem="Kxx-J0-5W2" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="-48" id="zn0-M8-Abl"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="temperature1" destination="kIa-M3-mh7" id="6fK-bi-ZWE"/>
+                        <outlet property="temperature2" destination="Y1n-qx-s3D" id="dBn-Rn-eh7"/>
                         <outlet property="temperatureLabel" destination="cMu-uC-qlx" id="zCc-DX-pYu"/>
                         <outlet property="updateBtn" destination="whm-PY-VAy" id="Moc-bl-uxH"/>
                         <outlet property="updatedLabel" destination="LbN-OC-I5B" id="EFr-K7-KY5"/>
