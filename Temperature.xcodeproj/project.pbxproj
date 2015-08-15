@@ -32,6 +32,7 @@
 		A04E28661B76B382002E5C30 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04E28591B76B22B002E5C30 /* ParseFacebookUtils.framework */; };
 		A04E28671B76B382002E5C30 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04E285A1B76B22B002E5C30 /* ParseFacebookUtilsV4.framework */; };
 		A04E28681B76B382002E5C30 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04E285B1B76B22B002E5C30 /* ParseUI.framework */; };
+		A04E286A1B7FB721002E5C30 /* temp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A04E28691B7FB721002E5C30 /* temp.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +110,7 @@
 		A04E28591B76B22B002E5C30 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		A04E285A1B76B22B002E5C30 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
 		A04E285B1B76B22B002E5C30 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		A04E28691B7FB721002E5C30 /* temp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = temp.jpg; path = pictures/temp.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +221,7 @@
 		130A478E1AEE585C00420A23 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A04E28691B7FB721002E5C30 /* temp.jpg */,
 				13A9AD891B666CCA0043D91C /* libsqlite3.tbd */,
 				13A9AD871B666CBF0043D91C /* libz.tbd */,
 				A04E28561B76B22B002E5C30 /* Bolts.framework */,
@@ -385,6 +388,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				130A47521AEE579E00420A23 /* Main.storyboard in Resources */,
+				A04E286A1B7FB721002E5C30 /* temp.jpg in Resources */,
 				130A47571AEE579E00420A23 /* LaunchScreen.xib in Resources */,
 				130A47541AEE579E00420A23 /* Images.xcassets in Resources */,
 			);

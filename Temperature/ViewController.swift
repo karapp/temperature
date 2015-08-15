@@ -45,7 +45,7 @@ class ViewController: UIViewController {
     func updateTemperatureData() {
         let spinningActivity = MBProgressHUD.showHUDAddedTo(self.view, animated: true)
         spinningActivity.labelText = "Laddar..."
-        spinningActivity.detailsLabelText = "Hämtar temperatur"
+        spinningActivity.detailsLabelText = "Hämtar data"
         spinningActivity.userInteractionEnabled = false
         
         let query = PFQuery(className:"temps")
