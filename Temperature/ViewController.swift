@@ -16,9 +16,11 @@ class ViewController: UIViewController {
     @IBOutlet var updateBtn: UIButton!
     @IBOutlet weak var temperature1: UILabel!
     @IBOutlet weak var temperature2: UILabel!
+    @IBOutlet weak var windspeed: UILabel!
     
     var tempSolbInne:Float!
     var tempSolrUte:Float!
+    var windSolb:Float!
     
     var container: UIView = UIView()
     var loadingView: UIView = UIView()
@@ -122,6 +124,29 @@ class ViewController: UIViewController {
                 if let tempdata2 = tempdata2 {
                     self.tempSolrUte = tempdata2["temperature"] as! Float
                     self.temperature2.text = String(format: "%.01f", self.tempSolrUte) + "°"
+                    
+                    let userDefaults = NSUserDefaults.standardUserDefaults()
+                    userDefaults.setObject("test", forKey: "currentTemp")
+                    
+                    if let currentTemp = userDefaults.stringForKey("currentTemp")
+                    {
+                        print(currentTemp)
+                    }
+                    
+                }
+            } else {
+                print(error)
+            }
+        }
+        let query3 = PFQuery(className:"wind")
+        query3.orderByDescending("createdAt")
+        query3.whereKey("sensor", equalTo:"Solbad Vind")
+        query3.getFirstObjectInBackgroundWithBlock {
+            (tempdata3: PFObject?, error: NSError?) -> Void in
+            if error == nil {
+                if let tempdata3 = tempdata3 {
+                    self.windSolb = tempdata3["wind"] as! Float
+                    self.windspeed.text = String(format: "%.01f", self.windSolb) + "°"
                     
                     let userDefaults = NSUserDefaults.standardUserDefaults()
                     userDefaults.setObject("test", forKey: "currentTemp")

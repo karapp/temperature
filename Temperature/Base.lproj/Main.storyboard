@@ -41,6 +41,12 @@
                                 <color key="textColor" red="0.37531190660000002" green="0.61845981279999995" blue="0.97960069439999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" red="0.074739995789999999" green="0.51563923440000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="--" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b0F-eK-IaM">
+                                <rect key="frame" x="211" y="202" width="49" height="73"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
+                                <color key="textColor" red="0.37531190660000002" green="0.61845981279999995" blue="0.97960069439999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.074739995789999999" green="0.51563923440000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="whm-PY-VAy">
                                 <rect key="frame" x="231" y="522" width="138" height="30"/>
                                 <state key="normal" title="Uppdatera nu">
@@ -52,6 +58,12 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Solbad Utetemp" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0l-Jf-849">
                                 <rect key="frame" x="343" y="161" width="115" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="10"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Solros Utetemp" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x3T-wh-kLe">
+                                <rect key="frame" x="195" y="161" width="79" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="10"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -71,8 +83,11 @@
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="temp.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="YNI-sn-hW1">
                                 <rect key="frame" x="167" y="137" width="30" height="48"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Solros Utetemp" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x3T-wh-kLe">
-                                <rect key="frame" x="195" y="161" width="79" height="21"/>
+                            <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="apple-touch-icon-144x144-precomposed.png" translatesAutoresizingMaskIntoConstraints="NO" id="W2q-b7-dEa">
+                                <rect key="frame" x="263" y="48" width="74" height="65"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Medelvind" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDk-2n-RIm">
+                                <rect key="frame" x="204" y="254" width="115" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="10"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -87,6 +102,8 @@
                             <constraint firstItem="Y1n-qx-s3D" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="-149.5" id="5a2-KW-PEB"/>
                             <constraint firstItem="AD3-xC-SiZ" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="20" id="670-7H-Daf"/>
                             <constraint firstItem="LbN-OC-I5B" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="6O2-ZS-yxC"/>
+                            <constraint firstItem="W2q-b7-dEa" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="9UE-oY-V0P"/>
+                            <constraint firstItem="W2q-b7-dEa" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="-219.5" id="DAp-Tc-Qez"/>
                             <constraint firstItem="whm-PY-VAy" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Jsg-cx-UnC"/>
                             <constraint firstItem="YNI-sn-hW1" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="-118" id="LdK-ST-73g"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="whm-PY-VAy" secondAttribute="bottom" constant="48" id="Qts-3H-Pui"/>
@@ -99,8 +116,12 @@
                             <constraint firstItem="cMu-uC-qlx" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="-149.5" id="eKS-ay-FQR"/>
                             <constraint firstItem="AD3-xC-SiZ" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="-139" id="fPn-fb-xIg"/>
                             <constraint firstItem="whm-PY-VAy" firstAttribute="top" secondItem="LbN-OC-I5B" secondAttribute="bottom" constant="8" id="hFF-qc-798"/>
+                            <constraint firstItem="fDk-2n-RIm" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="-38.5" id="hU9-m4-ySe"/>
+                            <constraint firstItem="b0F-eK-IaM" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="-64.5" id="i6t-Es-LX8"/>
+                            <constraint firstItem="fDk-2n-RIm" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="-35.5" id="j3S-kl-5s5"/>
                             <constraint firstItem="lqf-Z6-nps" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="78" id="j67-Rw-cFr"/>
                             <constraint firstItem="lqf-Z6-nps" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="-35.5" id="nDl-kA-Tdb"/>
+                            <constraint firstItem="b0F-eK-IaM" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="-61.5" id="wO9-JQ-IQb"/>
                             <constraint firstItem="Kxx-J0-5W2" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="-48" id="zn0-M8-Abl"/>
                         </constraints>
                     </view>
@@ -110,6 +131,7 @@
                         <outlet property="temperatureLabel" destination="cMu-uC-qlx" id="zCc-DX-pYu"/>
                         <outlet property="updateBtn" destination="whm-PY-VAy" id="Moc-bl-uxH"/>
                         <outlet property="updatedLabel" destination="LbN-OC-I5B" id="EFr-K7-KY5"/>
+                        <outlet property="windspeed" destination="b0F-eK-IaM" id="BQ4-4V-3OM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -118,6 +140,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="apple-touch-icon-144x144-precomposed.png" width="120" height="120"/>
         <image name="temp.jpg" width="23" height="43"/>
     </resources>
 </document>

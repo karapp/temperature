@@ -33,6 +33,8 @@
 		A04E28671B76B382002E5C30 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04E285A1B76B22B002E5C30 /* ParseFacebookUtilsV4.framework */; };
 		A04E28681B76B382002E5C30 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04E285B1B76B22B002E5C30 /* ParseUI.framework */; };
 		A04E286A1B7FB721002E5C30 /* temp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A04E28691B7FB721002E5C30 /* temp.jpg */; };
+		A04E286C1B7FC2F7002E5C30 /* apple-touch-icon-144x144-precomposed.png in Resources */ = {isa = PBXBuildFile; fileRef = A04E286B1B7FC2F7002E5C30 /* apple-touch-icon-144x144-precomposed.png */; };
+		A04E286E1B8081D4002E5C30 /* iconsineed-wind-symbol-128.png in Resources */ = {isa = PBXBuildFile; fileRef = A04E286D1B8081D4002E5C30 /* iconsineed-wind-symbol-128.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +113,8 @@
 		A04E285A1B76B22B002E5C30 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
 		A04E285B1B76B22B002E5C30 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
 		A04E28691B7FB721002E5C30 /* temp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = temp.jpg; path = pictures/temp.jpg; sourceTree = "<group>"; };
+		A04E286B1B7FC2F7002E5C30 /* apple-touch-icon-144x144-precomposed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "apple-touch-icon-144x144-precomposed.png"; path = "pictures/apple-touch-icon-144x144-precomposed.png"; sourceTree = "<group>"; };
+		A04E286D1B8081D4002E5C30 /* iconsineed-wind-symbol-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iconsineed-wind-symbol-128.png"; path = "pictures/iconsineed-wind-symbol-128.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +226,8 @@
 			isa = PBXGroup;
 			children = (
 				A04E28691B7FB721002E5C30 /* temp.jpg */,
+				A04E286D1B8081D4002E5C30 /* iconsineed-wind-symbol-128.png */,
+				A04E286B1B7FC2F7002E5C30 /* apple-touch-icon-144x144-precomposed.png */,
 				13A9AD891B666CCA0043D91C /* libsqlite3.tbd */,
 				13A9AD871B666CBF0043D91C /* libz.tbd */,
 				A04E28561B76B22B002E5C30 /* Bolts.framework */,
@@ -389,6 +395,8 @@
 			files = (
 				130A47521AEE579E00420A23 /* Main.storyboard in Resources */,
 				A04E286A1B7FB721002E5C30 /* temp.jpg in Resources */,
+				A04E286E1B8081D4002E5C30 /* iconsineed-wind-symbol-128.png in Resources */,
+				A04E286C1B7FC2F7002E5C30 /* apple-touch-icon-144x144-precomposed.png in Resources */,
 				130A47571AEE579E00420A23 /* LaunchScreen.xib in Resources */,
 				130A47541AEE579E00420A23 /* Images.xcassets in Resources */,
 			);
