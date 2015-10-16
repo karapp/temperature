@@ -20,6 +20,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var windspeed: UILabel!
     @IBOutlet weak var windGust: UILabel!
     @IBOutlet weak var windDir: UILabel!
+    @IBOutlet weak var toaTemp: UILabel!
+    @IBOutlet weak var friggeTemp: UILabel!
     
     
     var tempSolbInne:Float!
@@ -28,6 +30,8 @@ class ViewController: UIViewController {
     var gustSolb:Float!
     var direction:Float!
     var rainSolb:Float!
+    var toaTempVar:Float!
+    var friggeTempVar:Float!
     var updateTimer:Double!
 
     
@@ -145,8 +149,36 @@ class ViewController: UIViewController {
                 print(error)
             }
         }
-      
-        
+        let query5 = PFQuery(className:"temps")
+        query5.orderByDescending("createdAt")
+        query5.whereKey("sensor", equalTo:"Solbad Utetemp")
+        query5.getFirstObjectInBackgroundWithBlock {
+            (tempdata5: PFObject?, error: NSError?) -> Void in
+            if error == nil {
+                if let tempdata5 = tempdata5 {
+                    self.toaTempVar = tempdata5["temperature"] as! Float
+                    self.toaTemp.text = String(format: "%.01f", self.toaTempVar) + "°"
+                    
+                }
+            } else {
+                print(error)
+            }
+        }
+        let query6 = PFQuery(className:"temps")
+        query6.orderByDescending("createdAt")
+        query6.whereKey("sensor", equalTo:"Solbad Friggebodstemp")
+        query6.getFirstObjectInBackgroundWithBlock {
+            (tempdata6: PFObject?, error: NSError?) -> Void in
+            if error == nil {
+                if let tempdata6 = tempdata6 {
+                    self.friggeTempVar = tempdata6["temperature"] as! Float
+                    self.friggeTemp.text = String(format: "%.01f", self.friggeTempVar) + "°"
+                    
+                }
+            } else {
+                print(error)
+            }
+        }
         
         
         

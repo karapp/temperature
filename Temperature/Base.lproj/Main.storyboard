@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9058" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9048"/>
     </dependencies>
     <scenes>
@@ -255,10 +254,12 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="friggeTemp" destination="g2i-5b-gHn" id="WL5-zD-0f2"/>
                         <outlet property="rain" destination="1WV-0e-gIr" id="bYw-ah-kwA"/>
                         <outlet property="temperature1" destination="kIa-M3-mh7" id="6fK-bi-ZWE"/>
                         <outlet property="temperature2" destination="Y1n-qx-s3D" id="dBn-Rn-eh7"/>
                         <outlet property="temperatureLabel" destination="cMu-uC-qlx" id="zCc-DX-pYu"/>
+                        <outlet property="toaTemp" destination="en3-xw-FEM" id="hNi-Ak-AGJ"/>
                         <outlet property="updatedLabel" destination="LbN-OC-I5B" id="EFr-K7-KY5"/>
                         <outlet property="windDir" destination="hfD-k1-uc9" id="zBp-Cp-yXu"/>
                         <outlet property="windGust" destination="ck9-yY-3Bx" id="6dF-J9-mwb"/>
