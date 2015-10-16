@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8164.2" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9058" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8135.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9048"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -13,123 +13,252 @@
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                    <view key="view" contentMode="center" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <userGuides>
+                            <userLayoutGuide location="452" affinity="minY"/>
+                            <userLayoutGuide location="180" affinity="minX"/>
+                            <userLayoutGuide location="420" affinity="minX"/>
+                            <userLayoutGuide location="250" affinity="minX"/>
+                            <userLayoutGuide location="348" affinity="minX"/>
+                            <userLayoutGuide location="300" affinity="minX"/>
+                            <userLayoutGuide location="567" affinity="minY"/>
+                        </userGuides>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LbN-OC-I5B">
-                                <rect key="frame" x="157" y="493" width="287" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LbN-OC-I5B">
+                                <rect key="frame" x="157" y="514" width="287" height="21"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.1058823529" green="0.5450980392" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="--°" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMu-uC-qlx">
-                                <rect key="frame" x="354" y="114" width="49" height="73"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
-                                <color key="textColor" red="0.37531190662662334" green="0.61845981281940487" blue="0.97960069444444442" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="--°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMu-uC-qlx">
+                                <rect key="frame" x="349" y="158" width="72" height="73"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="45"/>
+                                <color key="textColor" red="0.1058823529" green="0.5450980392" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" red="0.07473999579471291" green="0.51563923443522275" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="--°" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y1n-qx-s3D">
-                                <rect key="frame" x="211" y="114" width="49" height="73"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
-                                <color key="textColor" red="0.37531190660000002" green="0.61845981279999995" blue="0.97960069439999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="--°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y1n-qx-s3D">
+                                <rect key="frame" x="181" y="158" width="69" height="73"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="45"/>
+                                <color key="textColor" red="0.1058823529" green="0.5450980392" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" red="0.074739995789999999" green="0.51563923440000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="--°" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kIa-M3-mh7">
-                                <rect key="frame" x="354" y="202" width="49" height="73"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
-                                <color key="textColor" red="0.37531190660000002" green="0.61845981279999995" blue="0.97960069439999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="--°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kIa-M3-mh7">
+                                <rect key="frame" x="350" y="339" width="71" height="73"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
+                                <color key="textColor" red="0.1058823529" green="0.5450980392" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" red="0.074739995789999999" green="0.51563923440000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="--" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b0F-eK-IaM">
-                                <rect key="frame" x="211" y="202" width="49" height="73"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
-                                <color key="textColor" red="0.37531190660000002" green="0.61845981279999995" blue="0.97960069439999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1WV-0e-gIr">
+                                <rect key="frame" x="265" y="412" width="71" height="73"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
+                                <color key="textColor" red="0.1058823529" green="0.5450980392" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" red="0.074739995789999999" green="0.51563923440000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="whm-PY-VAy">
-                                <rect key="frame" x="231" y="522" width="138" height="30"/>
-                                <state key="normal" title="Uppdatera nu">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="sayHello:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vil-UT-AK6"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Solbad Utetemp" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0l-Jf-849">
-                                <rect key="frame" x="343" y="161" width="115" height="21"/>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="10"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Varberg" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0l-Jf-849">
+                                <rect key="frame" x="328" y="227" width="115" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="25"/>
+                                <color key="textColor" red="0.99215370449999996" green="1" blue="0.99849788049999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Solros Utetemp" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x3T-wh-kLe">
-                                <rect key="frame" x="195" y="161" width="79" height="21"/>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="10"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Väder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5xh-uF-6aP">
+                                <rect key="frame" x="300" y="87" width="120" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="25"/>
+                                <color key="textColor" red="0.99215370449999996" green="1" blue="0.99849788049999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Solbad Innetemp" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqf-Z6-nps">
-                                <rect key="frame" x="343" y="254" width="115" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Innetemp (°C)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqf-Z6-nps">
+                                <rect key="frame" x="349" y="395" width="73" height="21"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="10"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.99215370449999996" green="1" blue="0.99849788049999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="temp.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="AD3-xC-SiZ">
-                                <rect key="frame" x="305" y="137" width="30" height="48"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="temp.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Kxx-J0-5W2">
-                                <rect key="frame" x="305" y="228" width="30" height="48"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="temp.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="YNI-sn-hW1">
-                                <rect key="frame" x="167" y="137" width="30" height="48"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="apple-touch-icon-144x144-precomposed.png" translatesAutoresizingMaskIntoConstraints="NO" id="W2q-b7-dEa">
-                                <rect key="frame" x="263" y="48" width="74" height="65"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Medelvind" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDk-2n-RIm">
-                                <rect key="frame" x="204" y="254" width="115" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Regn Timme (mm)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9iS-yb-W3f">
+                                <rect key="frame" x="248" y="468" width="103" height="21"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="10"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.99215370449999996" green="1" blue="0.99849788049999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b0F-eK-IaM">
+                                <rect key="frame" x="181" y="264" width="69" height="73"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
+                                <color key="textColor" red="0.1058823529" green="0.5450980392" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.074739995789999999" green="0.51563923440000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Göteborg" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x3T-wh-kLe">
+                                <rect key="frame" x="149" y="224" width="132" height="28"/>
+                                <animations/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="25"/>
+                                <color key="textColor" red="0.99215370450249885" green="1" blue="0.99849788047492238" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="moln.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="W2q-b7-dEa">
+                                <rect key="frame" x="204" y="65" width="96" height="75"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Medelvind (m/s)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDk-2n-RIm">
+                                <rect key="frame" x="180" y="320" width="70" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="10"/>
+                                <color key="textColor" red="0.99215370449999996" green="1" blue="0.99849788049999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2i-5b-gHn">
+                                <rect key="frame" x="266" y="339" width="71" height="73"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
+                                <color key="textColor" red="0.1058823529" green="0.5450980392" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.074739995789999999" green="0.51563923440000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Lillstugetemp (°C)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4l-YF-nR1">
+                                <rect key="frame" x="249" y="395" width="103" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="10"/>
+                                <color key="textColor" red="0.99215370449999996" green="1" blue="0.99849788049999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="en3-xw-FEM">
+                                <rect key="frame" x="182" y="339" width="69" height="73"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
+                                <color key="textColor" red="0.1058823529" green="0.5450980392" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.074739995789999999" green="0.51563923440000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Toatemp (°C)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a8Z-8D-nvZ">
+                                <rect key="frame" x="181" y="395" width="70" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="10"/>
+                                <color key="textColor" red="0.99215370449999996" green="1" blue="0.99849788049999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfD-k1-uc9">
+                                <rect key="frame" x="349" y="264" width="71" height="73"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
+                                <color key="textColor" red="0.1058823529" green="0.5450980392" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.074739995789999999" green="0.51563923440000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ck9-yY-3Bx">
+                                <rect key="frame" x="265" y="264" width="71" height="73"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
+                                <color key="textColor" red="0.1058823529" green="0.5450980392" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.074739995789999999" green="0.51563923440000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Vindriktning (°)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4WC-o9-fyh">
+                                <rect key="frame" x="348" y="320" width="73" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="10"/>
+                                <color key="textColor" red="0.99215370449999996" green="1" blue="0.99849788049999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Byvind (m/s)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1mo-rQ-2LL">
+                                <rect key="frame" x="248" y="320" width="103" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="10"/>
+                                <color key="textColor" red="0.99215370449999996" green="1" blue="0.99849788049999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KLu-aD-z06">
+                                <rect key="frame" x="181" y="412" width="69" height="73"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
+                                <color key="textColor" red="0.1058823529" green="0.5450980392" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.074739995789999999" green="0.51563923440000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Regn Dygn (mm)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gcy-yA-iEd">
+                                <rect key="frame" x="180" y="468" width="70" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="10"/>
+                                <color key="textColor" red="0.99215370449999996" green="1" blue="0.99849788049999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lGu-0Y-ldE">
+                                <rect key="frame" x="349" y="412" width="70" height="72"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
+                                <color key="textColor" red="0.1058823529" green="0.5450980392" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.074739995789999999" green="0.51563923440000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Lufttryck (hPa)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qb6-3O-cTE">
+                                <rect key="frame" x="347" y="468" width="73" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="10"/>
+                                <color key="textColor" red="0.99215370449999996" green="1" blue="0.99849788049999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.085921464732605021" green="0.085476275796166665" blue="0.086366653669043392" alpha="0.98999999999999999" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="x3T-wh-kLe" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="-128.5" id="2Ib-nZ-u5c"/>
-                            <constraint firstItem="x3T-wh-kLe" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="-65.5" id="2iN-Ni-opP"/>
-                            <constraint firstItem="YNI-sn-hW1" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="-139" id="3BN-xr-jaD"/>
-                            <constraint firstItem="cMu-uC-qlx" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="78" id="5Jz-BO-HRu"/>
-                            <constraint firstItem="Y1n-qx-s3D" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="-149.5" id="5a2-KW-PEB"/>
-                            <constraint firstItem="AD3-xC-SiZ" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="20" id="670-7H-Daf"/>
+                            <constraint firstItem="en3-xw-FEM" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="-83.5" id="3EG-94-E40"/>
                             <constraint firstItem="LbN-OC-I5B" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="6O2-ZS-yxC"/>
-                            <constraint firstItem="W2q-b7-dEa" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="9UE-oY-V0P"/>
-                            <constraint firstItem="W2q-b7-dEa" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="-219.5" id="DAp-Tc-Qez"/>
-                            <constraint firstItem="whm-PY-VAy" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Jsg-cx-UnC"/>
-                            <constraint firstItem="YNI-sn-hW1" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="-118" id="LdK-ST-73g"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="whm-PY-VAy" secondAttribute="bottom" constant="48" id="Qts-3H-Pui"/>
-                            <constraint firstItem="Kxx-J0-5W2" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="20" id="UNE-bO-mbI"/>
-                            <constraint firstItem="kIa-M3-mh7" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="78.5" id="Xwj-F8-gpF"/>
-                            <constraint firstItem="V0l-Jf-849" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="78" id="Z1p-cI-TB2"/>
-                            <constraint firstItem="kIa-M3-mh7" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="-61.5" id="ZJx-rn-eQL"/>
-                            <constraint firstItem="Y1n-qx-s3D" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="-64.5" id="cdW-JB-0pi"/>
-                            <constraint firstItem="V0l-Jf-849" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="-128.5" id="ddU-pF-nwp"/>
-                            <constraint firstItem="cMu-uC-qlx" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="-149.5" id="eKS-ay-FQR"/>
-                            <constraint firstItem="AD3-xC-SiZ" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="-139" id="fPn-fb-xIg"/>
-                            <constraint firstItem="whm-PY-VAy" firstAttribute="top" secondItem="LbN-OC-I5B" secondAttribute="bottom" constant="8" id="hFF-qc-798"/>
-                            <constraint firstItem="fDk-2n-RIm" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="-38.5" id="hU9-m4-ySe"/>
-                            <constraint firstItem="b0F-eK-IaM" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="-64.5" id="i6t-Es-LX8"/>
-                            <constraint firstItem="fDk-2n-RIm" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="-35.5" id="j3S-kl-5s5"/>
-                            <constraint firstItem="lqf-Z6-nps" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="78" id="j67-Rw-cFr"/>
-                            <constraint firstItem="lqf-Z6-nps" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="-35.5" id="nDl-kA-Tdb"/>
-                            <constraint firstItem="b0F-eK-IaM" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="-61.5" id="wO9-JQ-IQb"/>
-                            <constraint firstItem="Kxx-J0-5W2" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="-48" id="zn0-M8-Abl"/>
+                            <constraint firstItem="cMu-uC-qlx" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="-105.5" id="7Ib-C5-ebe"/>
+                            <constraint firstItem="a8Z-8D-nvZ" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="105.5" id="8EP-fW-TMq"/>
+                            <constraint firstItem="fDk-2n-RIm" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="30.5" id="8Pa-P0-cWo"/>
+                            <constraint firstItem="x3T-wh-kLe" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="-62" id="9Gm-Yj-eeB"/>
+                            <constraint firstItem="V0l-Jf-849" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="85.5" id="AN0-Mw-r0z"/>
+                            <constraint firstItem="4WC-o9-fyh" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="30.5" id="BBR-zC-ERV"/>
+                            <constraint firstItem="1WV-0e-gIr" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="148.5" id="BSF-sx-62e"/>
+                            <constraint firstItem="5xh-uF-6aP" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="-198" id="D9F-Aw-PJM"/>
+                            <constraint firstItem="1WV-0e-gIr" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="DpR-3Y-G48"/>
+                            <constraint firstItem="a8Z-8D-nvZ" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="-84" id="Gpx-cv-Ga4"/>
+                            <constraint firstItem="9iS-yb-W3f" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="IeU-h5-2QP"/>
+                            <constraint firstItem="V0l-Jf-849" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="-62.5" id="JAV-3I-u9Z"/>
+                            <constraint firstItem="hfD-k1-uc9" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="84.5" id="JIk-8J-IhX"/>
+                            <constraint firstItem="lqf-Z6-nps" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="105.5" id="KBs-fu-nIs"/>
+                            <constraint firstItem="g2i-5b-gHn" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="1.5" id="KSb-ra-QMY"/>
+                            <constraint firstItem="Y4l-YF-nR1" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="KnZ-ZM-3Fg"/>
+                            <constraint firstItem="ck9-yY-3Bx" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="LId-pe-M8Z"/>
+                            <constraint firstItem="W2q-b7-dEa" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="-48" id="Mpa-S2-EdK"/>
+                            <constraint firstItem="g2i-5b-gHn" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="75.5" id="OKz-K1-fx9"/>
+                            <constraint firstItem="1mo-rQ-2LL" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="OQQ-j0-EKY"/>
+                            <constraint firstItem="Gcy-yA-iEd" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="-85" id="PEz-MP-4mM"/>
+                            <constraint firstItem="lGu-0Y-ldE" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="148" id="SxT-lO-Fzi"/>
+                            <constraint firstItem="kIa-M3-mh7" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="75.5" id="XbS-Hh-Cdt"/>
+                            <constraint firstItem="Y1n-qx-s3D" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="-84.5" id="Xm6-u1-PFf"/>
+                            <constraint firstItem="1mo-rQ-2LL" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="30.5" id="Y8F-Tp-gGz"/>
+                            <constraint firstItem="Y1n-qx-s3D" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="-105.5" id="Znh-P6-7al"/>
+                            <constraint firstItem="Gcy-yA-iEd" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="178.5" id="d8P-9A-pFG"/>
+                            <constraint firstItem="ck9-yY-3Bx" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="dEn-EV-3pj"/>
+                            <constraint firstItem="x3T-wh-kLe" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="-85" id="dVk-9N-8SG"/>
+                            <constraint firstItem="lGu-0Y-ldE" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="84" id="drd-5J-4HN"/>
+                            <constraint firstItem="Qb6-3O-cTE" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="83.5" id="e25-o0-sMq"/>
+                            <constraint firstItem="b0F-eK-IaM" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="-84.5" id="eBH-aA-NQ8"/>
+                            <constraint firstItem="kIa-M3-mh7" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="85.5" id="fAM-x2-Gtb"/>
+                            <constraint firstItem="5xh-uF-6aP" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="60" id="fdo-fo-doh"/>
+                            <constraint firstItem="9iS-yb-W3f" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="178.5" id="heW-bZ-ZST"/>
+                            <constraint firstItem="KLu-aD-z06" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="-84.5" id="igt-DX-g3w"/>
+                            <constraint firstItem="b0F-eK-IaM" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="0.5" id="mJs-sZ-Yiv"/>
+                            <constraint firstItem="en3-xw-FEM" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="75.5" id="ocl-td-fih"/>
+                            <constraint firstItem="cMu-uC-qlx" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="85" id="pOO-cn-6R3"/>
+                            <constraint firstItem="4WC-o9-fyh" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="84.5" id="qjW-8D-Ts7"/>
+                            <constraint firstItem="W2q-b7-dEa" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="-197.5" id="r7G-ag-o6c"/>
+                            <constraint firstItem="Y4l-YF-nR1" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="105.5" id="sQe-sa-Nco"/>
+                            <constraint firstItem="Qb6-3O-cTE" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="178.5" id="tVA-ES-tKj"/>
+                            <constraint firstItem="fDk-2n-RIm" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="-85" id="tkK-vZ-F4e"/>
+                            <constraint firstItem="KLu-aD-z06" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="148.5" id="tqO-p3-HH3"/>
+                            <constraint firstItem="hfD-k1-uc9" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="wSr-HA-nym"/>
+                            <constraint firstItem="lqf-Z6-nps" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="85.5" id="x5l-cq-YKz"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="rain" destination="1WV-0e-gIr" id="bYw-ah-kwA"/>
                         <outlet property="temperature1" destination="kIa-M3-mh7" id="6fK-bi-ZWE"/>
                         <outlet property="temperature2" destination="Y1n-qx-s3D" id="dBn-Rn-eh7"/>
                         <outlet property="temperatureLabel" destination="cMu-uC-qlx" id="zCc-DX-pYu"/>
-                        <outlet property="updateBtn" destination="whm-PY-VAy" id="Moc-bl-uxH"/>
                         <outlet property="updatedLabel" destination="LbN-OC-I5B" id="EFr-K7-KY5"/>
                         <outlet property="windspeed" destination="b0F-eK-IaM" id="BQ4-4V-3OM"/>
                     </connections>
@@ -140,7 +269,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="apple-touch-icon-144x144-precomposed.png" width="120" height="120"/>
-        <image name="temp.jpg" width="23" height="43"/>
+        <image name="moln.jpg" width="157" height="125"/>
     </resources>
 </document>

@@ -16,11 +16,15 @@ class ViewController: UIViewController {
     @IBOutlet var updateBtn: UIButton!
     @IBOutlet weak var temperature1: UILabel!
     @IBOutlet weak var temperature2: UILabel!
+    @IBOutlet weak var rain: UILabel!
     @IBOutlet weak var windspeed: UILabel!
     
     var tempSolbInne:Float!
     var tempSolrUte:Float!
     var windSolb:Float!
+    var rainSolb:Float!
+    var updateTimer:Double!
+    
     
     var container: UIView = UIView()
     var loadingView: UIView = UIView()
@@ -74,16 +78,25 @@ class ViewController: UIViewController {
                     }
                     
                     
-                    let formatter: NSDateFormatter = NSDateFormatter()
-                    formatter.dateFormat = "HH:mm"
-                    let dateTimePrefix: String = formatter.stringFromDate(NSDate())
-                    self.updatedLabel.text = "Uppd. senast kl. " + dateTimePrefix
+                    //let formatter: NSDateFormatter = NSDateFormatter()
+                    //formatter.dateFormat = "HH:mm"
+                    //let dateTimePrefix: String = formatter.stringFromDate(NSDate())
+                    //self.updatedLabel.text = "Uppd. senast kl. " + dateTimePrefix
+                    
+                    self.updateTimer = tempdata["datestamp"] as! Double
+                    let date = NSDate(timeIntervalSince1970: self.updateTimer)
+                    let dateFormatter = NSDateFormatter()
+                    dateFormatter.dateFormat = "EEEE HH:mm"
+                    let dateTimePrefix: String = dateFormatter.stringFromDate(date)
+                    
+                    
+                    self.updatedLabel.text = "Uppd. senast: " + dateTimePrefix
                     
                     MBProgressHUD.hideAllHUDsForView(self.view, animated: true)
                     
                     // Disable button for x secs
-                    self.updateBtn.enabled = false
-                    NSTimer.scheduledTimerWithTimeInterval(60, target: self, selector: "enableButton", userInfo: nil, repeats: false)
+                    //self.updateBtn.enabled = false
+                    //NSTimer.scheduledTimerWithTimeInterval(60, target: self, selector: "enableButton", userInfo: nil, repeats: false)
 
                     
                 }
@@ -100,7 +113,7 @@ class ViewController: UIViewController {
             if error == nil {
                 if let tempdata1 = tempdata1 {
                     self.tempSolbInne = tempdata1["temperature"] as! Float
-                    self.temperature1.text = String(format: "%.01f", self.tempSolbInne) + "°"
+                    self.temperature1.text = String(format: "%.01f", self.tempSolbInne)
                     
                     let userDefaults = NSUserDefaults.standardUserDefaults()
                     userDefaults.setObject("test", forKey: "currentTemp")
@@ -146,7 +159,30 @@ class ViewController: UIViewController {
             if error == nil {
                 if let tempdata3 = tempdata3 {
                     self.windSolb = tempdata3["wind"] as! Float
-                    self.windspeed.text = String(format: "%.01f", self.windSolb) + "°"
+                    self.windspeed.text = String(format: "%.01f", self.windSolb)
+                    
+                    let userDefaults = NSUserDefaults.standardUserDefaults()
+                    userDefaults.setObject("test", forKey: "currentTemp")
+                    
+                    if let currentTemp = userDefaults.stringForKey("currentTemp")
+                    {
+                        print(currentTemp)
+                    }
+                    
+                }
+            } else {
+                print(error)
+            }
+        }
+        let query4 = PFQuery(className:"rain")
+        query4.orderByDescending("createdAt")
+        query4.whereKey("sensor", equalTo:"Solbad Regn")
+        query4.getFirstObjectInBackgroundWithBlock {
+            (tempdata4: PFObject?, error: NSError?) -> Void in
+            if error == nil {
+                if let tempdata4 = tempdata4 {
+                    self.rainSolb = tempdata4["rain"] as! Float
+                    self.rain.text = String(format: "%.01f", self.rainSolb)
                     
                     let userDefaults = NSUserDefaults.standardUserDefaults()
                     userDefaults.setObject("test", forKey: "currentTemp")

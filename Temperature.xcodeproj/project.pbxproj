@@ -26,6 +26,8 @@
 		13A9AD8A1B666CCA0043D91C /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 13A9AD891B666CCA0043D91C /* libsqlite3.tbd */; };
 		13A9AD9A1B66731A0043D91C /* TempWatchApp Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 13A9AD991B66731A0043D91C /* TempWatchApp Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		13EE28641B31F7BA0011EF03 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 13EE28631B31F7BA0011EF03 /* MBProgressHUD.m */; };
+		A00FAC381B9B82A500E85FFF /* Circle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A00FAC371B9B82A500E85FFF /* Circle.jpg */; };
+		A00FAC3A1B9B846800E85FFF /* moln.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A00FAC391B9B846800E85FFF /* moln.jpg */; };
 		A04E28631B76B382002E5C30 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04E28561B76B22B002E5C30 /* Bolts.framework */; };
 		A04E28641B76B382002E5C30 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04E28571B76B22B002E5C30 /* Parse.framework */; };
 		A04E28651B76B382002E5C30 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04E28581B76B22B002E5C30 /* ParseCrashReporting.framework */; };
@@ -35,6 +37,7 @@
 		A04E286A1B7FB721002E5C30 /* temp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A04E28691B7FB721002E5C30 /* temp.jpg */; };
 		A04E286C1B7FC2F7002E5C30 /* apple-touch-icon-144x144-precomposed.png in Resources */ = {isa = PBXBuildFile; fileRef = A04E286B1B7FC2F7002E5C30 /* apple-touch-icon-144x144-precomposed.png */; };
 		A04E286E1B8081D4002E5C30 /* iconsineed-wind-symbol-128.png in Resources */ = {isa = PBXBuildFile; fileRef = A04E286D1B8081D4002E5C30 /* iconsineed-wind-symbol-128.png */; };
+		A0FF9A311B80E76D009AF910 /* Weather-Icons.gif in Resources */ = {isa = PBXBuildFile; fileRef = A0FF9A301B80E76D009AF910 /* Weather-Icons.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +109,8 @@
 		13EE28611B31F7BA0011EF03 /* Temperature-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Temperature-Bridging-Header.h"; sourceTree = "<group>"; };
 		13EE28621B31F7BA0011EF03 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		13EE28631B31F7BA0011EF03 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		A00FAC371B9B82A500E85FFF /* Circle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Circle.jpg; path = pictures/Circle.jpg; sourceTree = "<group>"; };
+		A00FAC391B9B846800E85FFF /* moln.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = moln.jpg; path = pictures/moln.jpg; sourceTree = "<group>"; };
 		A04E28561B76B22B002E5C30 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		A04E28571B76B22B002E5C30 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		A04E28581B76B22B002E5C30 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
@@ -115,6 +120,7 @@
 		A04E28691B7FB721002E5C30 /* temp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = temp.jpg; path = pictures/temp.jpg; sourceTree = "<group>"; };
 		A04E286B1B7FC2F7002E5C30 /* apple-touch-icon-144x144-precomposed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "apple-touch-icon-144x144-precomposed.png"; path = "pictures/apple-touch-icon-144x144-precomposed.png"; sourceTree = "<group>"; };
 		A04E286D1B8081D4002E5C30 /* iconsineed-wind-symbol-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iconsineed-wind-symbol-128.png"; path = "pictures/iconsineed-wind-symbol-128.png"; sourceTree = "<group>"; };
+		A0FF9A301B80E76D009AF910 /* Weather-Icons.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "Weather-Icons.gif"; path = "pictures/Weather-Icons.gif"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +234,9 @@
 				A04E28691B7FB721002E5C30 /* temp.jpg */,
 				A04E286D1B8081D4002E5C30 /* iconsineed-wind-symbol-128.png */,
 				A04E286B1B7FC2F7002E5C30 /* apple-touch-icon-144x144-precomposed.png */,
+				A0FF9A301B80E76D009AF910 /* Weather-Icons.gif */,
+				A00FAC371B9B82A500E85FFF /* Circle.jpg */,
+				A00FAC391B9B846800E85FFF /* moln.jpg */,
 				13A9AD891B666CCA0043D91C /* libsqlite3.tbd */,
 				13A9AD871B666CBF0043D91C /* libz.tbd */,
 				A04E28561B76B22B002E5C30 /* Bolts.framework */,
@@ -393,8 +402,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0FF9A311B80E76D009AF910 /* Weather-Icons.gif in Resources */,
 				130A47521AEE579E00420A23 /* Main.storyboard in Resources */,
 				A04E286A1B7FB721002E5C30 /* temp.jpg in Resources */,
+				A00FAC381B9B82A500E85FFF /* Circle.jpg in Resources */,
+				A00FAC3A1B9B846800E85FFF /* moln.jpg in Resources */,
 				A04E286E1B8081D4002E5C30 /* iconsineed-wind-symbol-128.png in Resources */,
 				A04E286C1B7FC2F7002E5C30 /* apple-touch-icon-144x144-precomposed.png in Resources */,
 				130A47571AEE579E00420A23 /* LaunchScreen.xib in Resources */,
