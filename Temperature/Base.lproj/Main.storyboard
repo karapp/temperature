@@ -260,6 +260,8 @@
                         <outlet property="temperature2" destination="Y1n-qx-s3D" id="dBn-Rn-eh7"/>
                         <outlet property="temperatureLabel" destination="cMu-uC-qlx" id="zCc-DX-pYu"/>
                         <outlet property="updatedLabel" destination="LbN-OC-I5B" id="EFr-K7-KY5"/>
+                        <outlet property="windDir" destination="hfD-k1-uc9" id="zBp-Cp-yXu"/>
+                        <outlet property="windGust" destination="ck9-yY-3Bx" id="6dF-J9-mwb"/>
                         <outlet property="windspeed" destination="b0F-eK-IaM" id="BQ4-4V-3OM"/>
                     </connections>
                 </viewController>

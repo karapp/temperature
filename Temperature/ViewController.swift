@@ -18,13 +18,18 @@ class ViewController: UIViewController {
     @IBOutlet weak var temperature2: UILabel!
     @IBOutlet weak var rain: UILabel!
     @IBOutlet weak var windspeed: UILabel!
+    @IBOutlet weak var windGust: UILabel!
+    @IBOutlet weak var windDir: UILabel!
+    
     
     var tempSolbInne:Float!
     var tempSolrUte:Float!
     var windSolb:Float!
+    var gustSolb:Float!
+    var direction:Float!
     var rainSolb:Float!
     var updateTimer:Double!
-    
+
     
     var container: UIView = UIView()
     var loadingView: UIView = UIView()
@@ -49,9 +54,6 @@ class ViewController: UIViewController {
         updateTemperatureData()
     }
     
-    func enableButton() {
-        self.updateBtn.enabled = true
-    }
     
     func updateTemperatureData() {
         let spinningActivity = MBProgressHUD.showHUDAddedTo(self.view, animated: true)
@@ -69,35 +71,27 @@ class ViewController: UIViewController {
                     self.temperature = tempdata["temperature"] as! Float
                     self.temperatureLabel.text = String(format: "%.01f", self.temperature) + "°"
                   
-                    let userDefaults = NSUserDefaults.standardUserDefaults()
-                    userDefaults.setObject("test", forKey: "currentTemp")
+                    //let userDefaults = NSUserDefaults.standardUserDefaults()
+                    //userDefaults.setObject("test", forKey: "currentTemp")
                     
-                    if let currentTemp = userDefaults.stringForKey("currentTemp")
-                    {
-                        print(currentTemp)
-                    }
+                    //if let currentTemp = userDefaults.stringForKey("currentTemp")
+                    //{
+                        //print(currentTemp)
+                   // }
                     
                     
-                    //let formatter: NSDateFormatter = NSDateFormatter()
-                    //formatter.dateFormat = "HH:mm"
-                    //let dateTimePrefix: String = formatter.stringFromDate(NSDate())
-                    //self.updatedLabel.text = "Uppd. senast kl. " + dateTimePrefix
+               
+                    
+                    //TID Stämpel
                     
                     self.updateTimer = tempdata["datestamp"] as! Double
                     let date = NSDate(timeIntervalSince1970: self.updateTimer)
                     let dateFormatter = NSDateFormatter()
                     dateFormatter.dateFormat = "EEEE HH:mm"
                     let dateTimePrefix: String = dateFormatter.stringFromDate(date)
-                    
-                    
                     self.updatedLabel.text = "Uppd. senast: " + dateTimePrefix
                     
                     MBProgressHUD.hideAllHUDsForView(self.view, animated: true)
-                    
-                    // Disable button for x secs
-                    //self.updateBtn.enabled = false
-                    //NSTimer.scheduledTimerWithTimeInterval(60, target: self, selector: "enableButton", userInfo: nil, repeats: false)
-
                     
                 }
             } else {
@@ -151,6 +145,16 @@ class ViewController: UIViewController {
                 print(error)
             }
         }
+      
+        
+        
+        
+        
+        
+        
+   //VIND-DELEN
+    //_________________________________________________________________
+        
         let query3 = PFQuery(className:"wind")
         query3.orderByDescending("createdAt")
         query3.whereKey("sensor", equalTo:"Solbad Vind")
@@ -160,20 +164,20 @@ class ViewController: UIViewController {
                 if let tempdata3 = tempdata3 {
                     self.windSolb = tempdata3["wind"] as! Float
                     self.windspeed.text = String(format: "%.01f", self.windSolb)
+                    self.gustSolb = tempdata3["gust"] as! Float
+                    self.windGust.text = String(format: "%.01f", self.gustSolb)
+                    self.direction = tempdata3["direction"] as! Float
+                    self.windDir.text = String(format: "%.01F", self.direction)
                     
-                    let userDefaults = NSUserDefaults.standardUserDefaults()
-                    userDefaults.setObject("test", forKey: "currentTemp")
-                    
-                    if let currentTemp = userDefaults.stringForKey("currentTemp")
-                    {
-                        print(currentTemp)
-                    }
                     
                 }
             } else {
                 print(error)
             }
         }
+        //REGN-DELEN
+        //_________________________________________________________________
+        
         let query4 = PFQuery(className:"rain")
         query4.orderByDescending("createdAt")
         query4.whereKey("sensor", equalTo:"Solbad Regn")
